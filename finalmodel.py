@@ -7,9 +7,18 @@ from tensorflow import keras
 from tensorflow.keras import layers
 
 st.write("""
-# Jollibee Stock Price Prediction
+# Jolibee Stock Price Prediction
 Predict stock prices for Jollibee Food Corporation using this LSTM-based program.
 """)
+
+dataSet = open('./JFC_Historical_Data.csv', 'r')
+st.download_button(
+    label = "Download sample CSV data set",
+    data = dataSet,
+    file_name = 'JFC_Historical_Data.csv',
+    mime = 'csv',
+)
+
 st.divider()
 st.header("Input")
 
