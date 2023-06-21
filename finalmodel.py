@@ -7,7 +7,7 @@ from tensorflow import keras
 from tensorflow.keras import layers
 
 st.write("""
-# Jolibee Stock Price Prediction
+# Jollibee Stock Price Prediction
 Predict stock prices for Jollibee Food Corporation using this LSTM-based program.
 """)
 st.divider()
